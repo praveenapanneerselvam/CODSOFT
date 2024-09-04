@@ -1,0 +1,128 @@
+/* Styles for devices with a max width of 1024px (tablets and small screens) */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .logo, .menu {
+        padding: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu .menu-list {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-list .menu-list-items {
+        padding: 0.5rem 0;
+        color: #000; /* Text color for menu items */
+    }
+
+    .menu.active .menu-list {
+        display: flex;
+    }
+
+    .hero {
+        height: auto;
+        margin: 2rem 0;
+        background-size: cover;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+        background-color: lightblue;
+    }
+
+    .about .about-text, .about .about-image img {
+        width: 90%;
+        padding: 2rem 0;
+    }
+
+    .portfolio {
+        padding: 0 1rem;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .my-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-row .my-col {
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-form-container, .contact-details {
+        width: 100%;
+    }
+}
+
+/* Styles for devices with a max width of 768px (mobile screens) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu-list .menu-list-items {
+        padding: 1rem;
+        color: #000; /* Text color for menu items */
+    }
+
+    .hero {
+        background-size: cover;
+        height: auto;
+        margin: 2rem 0;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .about-text, .about .about-image img {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .portfolio .port-card {
+        margin: 1rem 0;
+    }
+
+    .services .my-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .my-card {
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-form-container, .contact-details {
+        width: 100%;
+        padding: 1rem;
+    }
+}
